@@ -1,0 +1,473 @@
+@import "font-awesome.css";
+/* Pagination thumbs
+========================================================*/
+.inner{    
+    margin: 20px 0px;
+    list-style: none;
+    overflow: hidden;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            width: 100px;
+            height: auto;
+            border: 1px solid #bda7b3;
+            padding: 4px;
+            margin: 0 8px 8px 0;  
+            overflow: hidden; 
+            .box-sizing(border-box);
+            position: relative;
+            // .box-shadow(0 0px 14px 2px rgba(0,0,0,0.1));         
+            a{
+                display: block; 
+                >img{
+                    .scale(1, 1);
+                    .transition(all 0.3s ease);
+                    width: 100%;
+                }           
+                span.magnifier-overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: #fff;
+                    z-index: 2;
+                    display: block;
+                    .box-sizing(border-box);
+                    left: 0px;
+                    top: 0px;
+                    font-size: 24px;
+                    .scale(0, 0);                    
+                    .opacity(0.4);
+                    .transition(all 0.3s ease);
+                }
+                span.fa {
+                     position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 5;
+                    display: block;
+                    .box-sizing(border-box);
+                    left: 0px;
+                    top: 0px;
+                    font-size: 24px;
+                    color: #000;
+                    .transition(all 0.3s ease);
+                    &:before {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-left: -10px;
+                        margin-top: -12px;                        
+                        .transition(all 0.3s ease);
+                        .scale(0, 0);
+                    }
+                }
+            }
+            &:hover {
+                a>img {
+                }
+                span.magnifier-overlay {
+                    .scale(1, 1);
+                    .transition(all 0.3s ease);
+                }
+                span.fa:before {
+                    .transition(all 0.3s ease);
+                    .scale(1.2, 1.2);
+                }
+            }
+
+        }
+    }
+}
+
+
+/* Gallery bg
+========================================================*/
+body.galleryOpen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    .size(100%,100%);
+    overflow: hidden;
+
+    .galleryContainer{
+        position: absolute;
+        z-index: 1000;
+        .size(100%,100%) !important;
+    }
+    
+    #content{
+        height: 0 !important;
+        overflow: hidden;
+    }
+}
+.galleryContainer{
+    position: relative;
+    top: 0;
+    left: 0;
+    .size(100%,0) !important;
+    overflow: hidden;
+    /*.perspective(1000px);*/
+    &.animationDisable{
+        .transition(none);
+        *{
+            .transition(none);
+        }
+    }
+}
+.galleryHolder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    .size(100%,100%);
+    z-index: 0 !important;
+    // .transform-origin(center);
+    background: #191919;
+}
+.imageHolder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    cursor: default;
+    .transition(all 0.7s ease-in-out);
+    .frontImg, .backImg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+        .transition(all 0.7s ease-in-out);
+    }
+    .frontImg, .backImg{
+        z-index: 2;
+        /*.rotateX(0deg);*/
+        .scale(1,1);
+    }
+    .backImg{
+        /*.rotateX(-180deg);*/
+        .scale(2,2);
+        .opacity(0);
+    }
+    &.scale{
+        .scale(0.75);
+    }
+    &.flip{
+        .transition(all 0.7s ease-in-out);
+        /*.rotateX(180deg);*/
+        .frontImg{
+            .opacity(0);
+            .scale(2,2);
+        }
+        .backImg{
+            .opacity(100);
+            /*.rotateX(-180deg);*/
+            .scale(1,1);
+        }
+    }
+    &.ie9{
+        .scale(1,1) !important;  
+        .frontImg,
+        .backImg {
+            .scale(1,1) !important; 
+        }
+    }
+    &.videoInside{
+        cursor: pointer;
+    }
+}
+.animation{
+    .transition(all 0.7s ease-in-out);
+}
+
+/* Description
+========================================================*/
+.galleryDescription{
+    position: absolute;
+    bottom: -400px;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    z-index: 3;
+    .transition(all 0.3s ease);
+    &.show{
+        bottom: 50px;
+    }
+    ul{ 
+        li{
+            position: absolute;
+            bottom: -200%;
+            .size(100%,auto);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 20px;
+            right: 0;
+            .box-sizing(border-box);
+            .transition(all 0.2s ease-in-out);
+            &.active{
+                display: block;
+                bottom: 0;
+                .transition(all 0.7s 1.8s ease-in-out);
+            }     
+            p{
+                text-align: left;
+                color: white;
+                line-height: 1.2em;
+                margin: 0px 0px 0px 0px;
+                &:first-child{
+                    font-size: 35px;
+                    line-height: 1em;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+    .description_list {
+        width: 500px;
+    }
+}
+
+
+
+
+/* Spinner
+========================================================*/
+.imgSpinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    .square(50px);
+    z-index: 99;
+    background: url(../images/gallery-loader.gif) center no-repeat #191919;
+    background-size: 30px 30px;
+    border-radius: 500px;
+    margin: -24px 0 0 -24px;
+    .transition(all 0.4s ease);
+    .opacity(0);
+    .scale(0,0);
+    &.spinnerShow{
+        .opacity(1);
+        .scale(1,1);
+    }
+}
+
+
+/* ========================================================
+                            Buttons
+========================================================*/
+
+
+/* Navigation Bar
+========================================================*/
+.gallery_nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    .transition(all 0.3s ease-out);
+    &.showButton {
+        bottom:0;
+    }
+}
+
+/* Prev Button
+========================================================*/
+.prevButton{
+    position: absolute;
+    display: inline-block !important;
+    z-index: 5;
+    .transition(all 0.3s ease-out);
+    bottom: 10px;
+    i{
+        position: relative;
+        font-size: 30px;
+        color: white;
+        .transition(all 0.3s ease-out);
+    }
+    &:hover i {
+        color: #d05252
+    }
+}
+
+
+.prevButton{
+    left: -50px;
+    &.showButton{
+        left: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .prevButton.showButton{
+        left: 3%;
+    }
+}
+
+/* Next Button
+========================================================*/
+.nextButton{
+    position: absolute;
+    display: inline-block !important;
+    z-index: 5;
+    .transition(all 0.3s ease-out);
+    bottom: 10px;
+    text-align: right;
+    i{
+        position: relative;
+        font-size: 30px;
+        color: white;
+        .transition(all 0.3s ease-out);
+    }
+    &:hover i {
+        color: #d05252
+    }
+}
+
+.nextButton{
+    right: -50px;
+    &.showButton{
+        right: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nextButton.showButton{
+        right: 3%;
+    }
+}
+
+/* Next Button, Prev Button Hovers
+========================================================*/
+
+.prevButton{
+    position: absolute;
+    .size(30px, 30px);
+}
+
+
+.nextButton{
+    position: absolute;
+    .size(30px, 30px);
+}
+
+
+
+/* Close Button
+========================================================*/
+.close-icon {
+    background: rgba(0, 0, 0, 0.5);
+    /* opacity: 0.5; */
+    border-radius: 100%;
+    width: 100px;
+    height: 100px; 
+    top: -120px;
+    right: -120px; 
+    position: absolute;
+    display: inline-block !important;
+    z-index: 5;
+    .transition(all 0.3s ease-out);    
+    z-index: 100;
+    i{
+        position: relative;
+        font-size: 50px;
+        .transition(all 0.3s ease-out);
+    }
+    .fa {
+        top: 63px;
+        font-size: 20px;
+        font-weight: 100;
+        color: #ffffff;
+        left: 23px;
+    }  
+     &:hover{
+        text-decoration: none;
+        i{
+            color: #d05252;
+        }
+
+    }
+    &.showButton{
+        top: -54px;
+        right: -49px; 
+    }
+}
+
+/* Info Button
+========================================================*/
+
+.info-icon{
+    position: absolute;
+    display: inline-block;
+    right: -2%;
+    font-size: 34px;
+    color: #ffffff !important;
+    opacity: 1;
+    z-index: 99;
+    bottom: 6px;
+    line-height: 36px;
+    .transition(all 0.3s ease-out);
+    &.showButton{
+        right: 2%;
+        .transition(all 0.3s ease-out);
+    }
+    &:hover{
+        color: #d05252 !important;
+        .transition(all 0.3s ease-out);
+    }
+}
+.close-info-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    left: auto;
+    .transition(all 0.3s ease-out);
+    i{
+        color: #fff !important;
+        font-size: 30px;
+    }
+    &:hover>i{
+        color: #d05252 !important;
+        .transition(all 0.3s ease-out);
+    }
+}
+
+
+/* Close Info Button
+========================================================*/
+
+
+
+
+.playButton, .pauseButton{
+    left: 50%;
+    top: -100px; 
+    .opacity(0.6);
+    &.showButton{
+        transition-delay: 0.3s;
+        top: 50%;
+    }
+}
+.playButton{
+    margin: -27px -24px 0 0;
+}
+.pauseButton{
+     margin: -27px -24px 0 0;
+}
+/* end gallery bg*/
+
+
+@media only screen and (max-width: 768px) {
+    .galleryDescription{
+        width: 100%;
+    }
+}
+@import "mixins.less"; 
+@import "tmMixins.less";

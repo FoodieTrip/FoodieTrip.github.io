@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Документация для шаблонов Bootstrap </title>
+  <meta charset="utf-8">
+  <link rel="canonical" href="http://www.templatemonster.com/help/quick-start-guide/website-templates/responsive-website-templates-v1-1/index_ru.html"/> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="css/responsive.css" media="screen">
+  <link rel="stylesheet" href="css/prettify.css"  media="screen">
+  <link rel="stylesheet" href="css/prettyPhoto.css"  media="screen">
+  <link rel="stylesheet" href="css/idea.css"  media="screen">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/contact-form.css" media="screen">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery-migrate-1.1.0.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/bootstrap-affix.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script> 
+
+  <script src="js/TMForm.js"></script>
+  <script src="js/modal.js"></script>  
+  <script src="js/bootstrap-filestyle.js"></script>    
+  
+  <script src="js/sForm.js"></script>  
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/scripts.js"></script>
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="css/ie.css" />
+  <![endif]-->
+
+    <!--[if lt IE 9]>
+      <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>  
+
+<!-- header
+================================================== -->
+<header class="header">
+  <div class="container">
+  <div class="row">
+  <article class="span4"><a class="brand" href="/help/" target="_blank"></a></article>
+ <article class="span6">
+ <h1 style="font-size:30px;"><img alt="" src="img/html-icon.png"  width="60"  > Документация для HTML шаблонов</h1>
+  </article> 
+  <article class="span2">
+    <div id="languages" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>En</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+          
+        </ul>
+      </div>
+      <div id="versions" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>v1-1</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+          <li><a href="/help/quick-start-guide/website-templates/bootstrap-website-templates-v1-0/index_en.html"><span>v1-0</span></a></li>
+          <li class="active"><a href="/help/quick-start-guide/website-templates/bootstrap-website-templates-v1-1/index_en.html"><span>v1-1</span></a></li>
+        </ul>
+      </div>
+  </article>  
+  </div>    
+  </div>
+</header>
+<div id="content"> 
+<div class="bg-content-top">
+<div class="container">
+
+<!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3"> 
+
+        <div id="nav_container">
+          <a href="javascript:;" id="affect_all">
+            <span class="expand">
+              <i class="icon-angle-down"></i>
+            </span>            
+            <span class="close">
+              <i class="icon-angle-up"></i>
+            </span>
+          </a>
+            <div class="clearfix"></div>    
+                <ul class="nav nav-list bs-docs-sidenav"  id="nav">
+                  <li class="nav-item item1">
+                    <dl class="slide-down">
+                       <dt><a href="#introduction" class="icon-info-sign">Введение</a></dt>
+                       <dd></dd>
+                     </dl>   
+                  </li>
+                  <li class="nav-item item2">
+                    <dl class="slide-down">
+                       <dt><a href="#unzipping-template-package" class="icon-check">Разархивирование шаблона</a></dt>  
+                       <dd></dd>                       
+                     </dl> 
+                  </li>           
+                  <li class="nav-item item3">
+                    <dl class="slide-down">
+                       <dt><a href="#general-information" class="icon-play">Общие сведения</a></dt>
+                         <dd></dd>
+                     </dl> 
+                  </li> 
+                  <li class="nav-item item4">
+                    <dl class="slide-down">
+                       <dt><a href="#editing-template" class="icon-cog">Редактирование шаблона</a> <i class="icon-sample"></i></dt>
+                         <dd>
+                         	<ul class="list">          
+                            <li><a href="#editing-html-and-css-files">Редактирование файлов HTML и CSS </a></li>
+                            <li><a href="#editing-psd-files">Редактирование файлов PSD </a></li>
+                            <li><a href="#custom-fonts">Пользовательские шрифты</a></li>
+                           </ul> 
+                         </dd>
+                     </dl> 
+                  </li> 
+                  <li class="nav-item item5">
+                    <dl class="slide-down">
+                      <dt><a href="#customization-tutorials" class="icon-fullscreen">Туториалы по редактированию</a> <i class="icon-sample"></i></dt>
+                      <dd>
+                          <ul class="list">          
+                          <li><a href="#how-to-edit-text">Как редактировать текст</a></li>
+                          <li><a href="#how-to-edit-images">Как редактировать изображения</a></li>
+                          <li><a href="#how-to-activate-contact-form">Как активировать контактную форму</a></li>
+                         </ul> 
+                       </dd>
+                    </dl>
+                  </li>                  
+                  <li class="nav-item item6">
+                    <dl class="slide-down">
+                       <dt><a href="#tm-add-ons" class="icon-wrench">Дополнения TM</a> <i class="icon-sample"></i></dt>
+                         <dd>
+                         	<ul class="list">          
+                              <li><a href="#contact-form-manual">Контактная форма</a></li>
+                              <li><a href="#search-engine">Поисковый движок</a></li>
+                              <li><a href="#under-construction">Сайт в разработке</a></li>
+                              <li><a href="#subscription-form">Форма подписка</a></li>
+                              <li><a href="#multimedia-gallery">Галерея TM </a></li>
+                             </ul> 
+                         </dd>
+                     </dl> 
+                  </li>                 
+                  <li class="nav-item item7-1">
+                    <dl class="slide-down">
+                       <dt><a href="#cookie-policy" class="icon-copy">Политика использования файлов Cookie</a></dt>
+                         <dd></dd>
+                     </dl> 
+                  </li> 
+                  <li class="nav-item item7">
+                    <dl class="slide-down">
+                       <dt><a href="#uploading-template" class="icon-cogs">Загрузка шаблона</a></dt>
+                         <dd></dd>
+                     </dl> 
+                  </li>   
+                  <li class="nav-item item8">
+                    <dl class="slide-down">
+                       <dt><a href="#conclusion" class="icon-question-sign">Дополнение</a></dt>
+                       <dd></dd>
+                     </dl> 
+                  </li> 
+                </ul>
+            </div>
+    </div> 
+
+      
+<div class="span9">
+
+<!-- box-content
+================================================== -->
+<div class="box-content">
+<!-- block-started
+================================================== -->
+<section class="block-started"  id="introduction">
+  <h2 class="item1"><i class="icon-info-sign"></i> Введение <small><i>Что находится в шаблоне и для чего его можно использовать</i></small></h2>
+  <p>Благодарим Вас за приобретение шаблона веб-сайта.  Данное руководство покажет, как работать с шаблоном, как его редактировать и сделать "живым" сайтом. </p>
+  <p>Контент всех страниц написан на HTML, а динамическая анимация - на JavaScript.  </p>
+  
+  
+</section>
+
+<section class="block-templates" id="unzipping-template-package">  
+  <h2 class="item2"><i class="icon-check"></i> Разархивирование шаблона </h2>
+  <p>В распакованном архиве шаблона находятся 3 папки: &quot;<strong>documentation</strong>&quot;, &quot;<strong>screenshots</strong>&quot; и &quot;<strong>site</strong>&quot;. Также вы увидите архив &quot;<strong>sources_############.zip</strong>&quot; который нужно распаковать. </p>
+            <p>Папка sources содержит исходные файлы темы.  Она защищена паролем и ее можно открыть только при помощи программ  <a href="/help/unzipping-your-template.html" target="_blank">WinZip (Windows OS)</a> и  <a href="/help/how-unzip-template-mac.html" target="_blank">StuffitExpander (MAC OS)</a>.</p>
+            <p>Оба приложения можно скачать бесплатно для пробного использования:</p>
+            <ul class="square-list">
+            <li><a href="http://www.winzip.com/downauto.cgi?o=1&amp;file=http://download.winzip.com/winzip160.exe&amp;email=&amp;er=&amp;os=win" target="_blank">WinZip</a></li>
+            <li><a href="http://www.stuffit.com/mac-stuffit-download.html" target="_blank">StuffitExpander</a></li>
+          </ul>
+            <p class="notification-box">При разархивировании файла "sources_############.zip" нужно будет ввести пароль, который можно найти на странице скачивания шаблона (откройте ссылку в электронном письме от нашей компании).</p>
+            <p>После распаковывания шаблон будет состоять из 4 папок: &quot;<strong>documentation</strong>&quot;, &quot;<strong>screenshots</strong>&quot;, &quot;<strong>site</strong>&quot; и &quot;<strong>sources</strong>&quot;.</p>
+</section>
+
+<section class="block-templates" id="general-information">  
+  <h2 class="item3"><i class="icon-play"></i> Общие сведения </h2>
+  <h4>Программные требования</h4>
+  <p><strong>Adobe Dreamweaver</strong> (<a href="http://www.adobe.com/products/dreamweaver/" target="_blank">скачать бесплатно пробную версию</a>). Используется для редактирования файлов .HTML, .JS, .PHP и .CSS.<br/>
+  <strong>Adobe Photoshop CS</strong> и выше (<a href="http://www.adobe.com/products/photoshop.html" target="_blank">скачать бесплатно пробную версию</a>). Используется для редактирования файлов .PSD.</p>
+  <p>Структура  папок и файлов шаблона выглядит следующим образом: </p>
+  <ul class="files_structure">
+      <li class="folder"><i class="icon-folder-close"></i> <b>documentation</b><small class="muted"> – содержит документацию по редактированию и установке шаблона.</small>
+      </li>
+      <li class="folder"><i class="icon-folder-close"></i> <b>screenshots</b><small class="muted"> - содержит скриншоты шаблона.</small>
+      </li>
+      <li class="folder"><i class="icon-folder-close"></i> <b>site</b><small class="muted"> - содержит .html файлы шаблона.</small>
+        <ul>
+          <li class="folder"><i class="icon-folder-close"></i> bat<small class="muted"> - содержит рабочий .php скрипт контактной формы.</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> css<small class="muted"> - содержит все файлы .css, используемые в дизайне.</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> images<small class="muted"> - содержит все изображения, используемые в файлах .html.</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> js<small class="muted"> - содержит библиотеки JavaScript и плагины jQuery.</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> search<small class="muted"> - содержит файлы .js, .php и .css поискового движка.</small></li>
+        </ul>
+      </li>
+      <li class="folder"><i class="icon-folder-close"></i> <b>sources</b><small class="muted"> содержит исходные файлы темы.</small>
+        <ul>
+          <li class="folder"><i class="icon-folder-close"></i> psd<small class="muted"> - содержит файлы .psd Adobe Photoshop.</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> less<small class="muted"> - содержит файлы  .css LESS, используемые в шаблоне.</small></li>
+        </ul>
+      </li>
+      <li class="file"><i class="icon-file"></i> fonts_info.txt<small class="muted"> - содержит список шрифтов, используемых в шаблоне.</small></li>
+      <li class="file"><i class="icon-file"></i> info.txt<small class="muted"> - содержит информацию о защищенной паролем папке  "sources".</small></li>
+    </ul>
+  
+</section>
+
+
+<section class="block-templates" id="editing-template">
+  <h2 class="item4"><i class="icon-cog"></i> Редактирование шаблона </h2>
+  
+  <p>При работе с шаблоном необходимо редактировать файлы <strong>.html</strong>, <strong>.css</strong>, <strong>.js</strong> и <strong>.psd</strong>. </p>
+  <h4 id="editing-html-and-css-files" class="scrollTo">Редактирование файлов HTML и CSS</h4>
+  <p>Все редактируемые файлы HTML находятся в папке "<strong>site</strong>" шаблона (index.html, index-1.html,index-2.html, и т.п.). Каждый файл index-#.html представляет отдельную страницу шаблона. </p>
+  <p>Чтобы открыть файл .html при помощи программы Adobe Dreamweaver, щелкните правой кнопкой мыши по файлу и в контекстном меню выберите <strong>Открыть с помощью > Adobe Dreamweaver</strong>. Когда файл  открыт, его можно редактировать.</p>
+  <p>Adobe Dreamweaver - это рекомендуемое приложение, позволяющее редактировать контент файлов HTML в визуальном режиме. Откройте любой файл .html и нажмите кнопку  <strong>Live Code </strong> в верхней части экрана, чтобы переключиться в визуальный режим. </p>
+  <div class="cols"> <a class="first" href="img/dreamweaver-code.jpg" data-gal="prettyPhoto"><img src="img/dreamweaver-code.jpg" width="360" alt=""></a> <a class="last" href="img/dreamweaver-design.jpg" data-gal="prettyPhoto"><img src="img/dreamweaver-design.jpg" width="360" alt=""></a> </div>
+  <p>Вы также можете воспользоваться детальным текстовым и видео туториалом <a href="/help/general-tutorials/work-with-html/" target="_blank">Как редактировать файлы HTML при помощи Adobe Dreamweaver</a>.</p>
+  <p>Файлы CSS используются для изменения внешнего вида шаблона, например шрифтов (семья шрифтов, размер, цвет и т.п.), фон, значение ширины колонки и т.д. Файлы css можно редактировать при помощи программы  Adobe Dreamweaver. В нашем онлайн-центре поддержки находятся детальные туториалы о том, <a href="/help/general-tutorials/work-with-css/" target="_blank">как работать с файлами CSS</a>. </p>
+  <h4 id="editing-psd-files" class="scrollTo">Редактирование файлов PSD</h4>
+  <p>Файлы PSD находятся в папке &quot;<strong>sources/psd</strong>&quot; шаблона. PSD - это исходные файлы дизайна шаблона. Они делятся на слои, поэтому любую часть дизайна шаблона можно изменить. </p>
+  <p>Во время редактирования можно использовать файлы PSD для редактирования картинок контента страниц или изображений, составляющих дизайн. </p>
+  <p class="cols-1"><a class="last" href="img/photoshop-interface.jpg" data-gal="prettyPhoto"><img src="img/photoshop-interface.jpg" width="460" alt=""></a></p>
+  <p>Более детальную информацию о работе с Photoshop  можно найти<a href="/help/general-tutorials/work-with-photoshop/" target="_blank"> в туториалах</a>.</p>
+  <h4 id="custom-fonts" class="scrollTo">Пользовательские шрифты</h4>
+  <p>В дизайне некоторых шаблонов могут использоваться нестандартные шрифты. По умолчанию, интернет-браузер может использовать только шрифты, установленные в  операционной системе. Другими словами, если в дизайне сайта используются пользовательские шрифты, не установленные на компьютере, эти шрифты отображаться не будут. Вместо них будут отображаться стандартные шрифты. Поэтому веб-разработчики ищут альтернативные решения. В наших шаблонах  пользовательские шрифты добавляются при помощи технологии <strong>Google Web Fonts</strong>. </p>
+  <h4>Google Web Fonts</h4>
+  <p>Более детальную информацию об использовании шрифтов Google Web Fonts можно найти в туториале  <a target="_blank" href="/help/how-to-use-the-google-web-fonts-api.html">Как работать со шрифтами Google web Fonts</a>. </p>
+ </section>
+
+
+<section class="block-templates" id="customization-tutorials">
+  <h2 class="item5"><i class="icon-fullscreen"></i> Туториалы по редактированию</h2>
+
+  <h4 id="how-to-edit-text" class="scrollTo">Как редактиовать текст</h4>
+            <p>Шаблоны основаны на HTML, поэтому весь контент находится в файлах .html.</p>
+            <ol>
+            <li>Перейдите в папку site шаблона.</li>
+            <li>Откройте файл index.html в редакторе HTML.</li>
+            <li>Можно использовать функцию поиска <strong>CTRL+F </strong>, чтобы найти нужный текст.</li>
+            <li>Измените текст в редакторе HTML. Сохраните файл и откройте в браузере, чтобы увидеть изменения.</li>
+          </ol>
+            <p>Также, для поиска нужных блоков, можно использовать браузерные инструменты разработчика. Более детальная информация о инструментах разработчиков находится в описаниях и туториалах.</p>
+            <p>Предлагаем ознакомиться со статьей <a href="/help/developer-tools.html" target="_blank">Инструменты Разработчика</a>.</p>
+            <p>Вы можете посмотреть детальный видео туториал <a target="_blank" href="/help/js-animated-how-to-edit-text.html">Как редактировать текст в шаблонах JS Animated</a></p>
+            <h4 id="how-to-edit-images" class="scrollTo">Как редактировать изображения</h4>
+            <p>Перейдите в папку '<strong>site/img</strong>' шаблона. Вы можете загружать изображения с тем же названием и расширением, что и исходные, таким образом заменяя их.</p>
+            <p>Также можно загружать пользовательские картинки со своим названием и расширением. Затем необходимо изменить название файла изображения в html.</p>
+            <ol>
+            <li>Откройте файл <strong>.html</strong> в папке &ldquo;<strong>site</strong>&rdquo; редактором html.</li>
+            <li>При помощи функции поиска <strong>CTRL+F</strong> найдите изображение в файле html.</li>
+            <li>Отредактируйте название и расширение файла-картинки.</li>
+          </ol>
+            <p>Вы также можете ознакомиться с детальным видео туториалом <a href="/help/js-animated-how-to-change-images.html" target="_blank">Как изменять изображения</a>.</p>
+            <h4 id="how-to-activate-contact-form" class="scrollTo">Как активировать контакт-форму</h4>
+            <ol>
+            <li>Откройте папку шаблона.</li>
+            <li>Перейдите в директорию <strong>site/bat</strong>.</li>
+            <li>Откройте файл '<strong>MailHandler.php</strong>' любым редактором кода (Adobe Dreamweaver, Notepad  и т.п.).</li>
+            <li>При помощи функции поиска (CTRL+F) найдите переменную <strong>$owner_email</strong>.</li>
+          </ol>
+            <p>Вы увидите следующую строку:</p>
+            <p> <strong>$owner_email='#';</strong> </p>
+            <p>замените символ <strong>#</strong> требуемым email-адресом. Вот и все, теперь контакт-форма должна отправлять сообщения на ваш email.</p>
+            <p></p>
+            
+</section>
+
+<section class="block-templates" id="tm-add-ons">
+  <h2 class="item6"><i class="icon-wrench"></i> Дополнения TM </h2>
+  
+    <p>В зависимости от дизайна, шаблон может включать следующие бесплатные дополнения:</p>
+        <ol>
+            <li><strong>Контактная форма</strong> - с ее помощью посетители сайта могут отправлять сообщения владельцу.</li>
+            <li><strong>Поисковый движок</strong> - выполняет поиск по контенту .html файлов.</li>
+            <li><strong>Сайт в разработке</strong> - страница с таймером обратного отсчета.</li>
+            <li><strong>Форма подписки</strong> - позволяет добавлять подписку на рассылку писемы.</li>
+          </ol>
+        <p class="notification-box">Внимание, в зависимости от дизайна, шаблон может включать дополнения Контактная форма, Поисковый движок, Обратный отсчет и Форма подписки, которые уже встроены в шаблон и работают по умолчанию. Воспользуйтесь детальной документацией для каждого приложения для дополнительной настройки или чтобы добавить его на/в другой сайт/проект/шаблон.</p>
+        <h4 id="contact-form-manual" class="scrollTo">Руководство по контактной форме</h4>
+        <article>
+      &nbsp; &nbsp; <strong>Контактная форма</strong> позволяет посетителям отправлять сообщения владельцу сайта. Контактные данные (Имя, Email, Текст сообщения) вводятся в соответствующие поля.  Она может быть очень полезной, если у пользователя не установлен почтовый клиент или он находится за чужим компьютером (например, в интернет-клубе). Поэтому мы разработали универсальную контактную форму, через которую можно отправлять сообщения владельцу сайта, добавлять новые поля и проверять передаваемые данные.       
+      <!-- Getting started begin -->
+          <div class="bs-docs-example">
+            <form id="contact-form">
+              <div class="contact-form-loader"></div>
+              <fieldset>
+                <label class="name">
+                  <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid name.</span>
+                </label>
+                <label class="state">
+                  <input type="text" name="state" placeholder="State:" data-constraints="@JustLetters" />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid state.</span>
+                </label>
+                <label class="email">
+                  <input type="text" name="email" placeholder="Email:" value="" data-constraints="@Required @Email" />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid email.</span>
+                </label>
+                <label class="phone">
+                  <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid phone.</span>
+                </label>
+                <label class="fax">
+                  <input type="text" name="fax" placeholder="Fax:" data-constraints="@JustNumbers" />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid fax.</span>
+                </label>
+                <label class="file">
+                  <input type="file" name="attachment" class="filestyle file-input" data-input="true" >
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid file.</span>
+                </label>
+                <label class="message">
+                  <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*The message is too short.</span>
+                </label>
+                <div>
+                  <a href="#" data-type="submit" >submit</a>
+                  <a href="#" data-type="reset" >reset</a> 
+                </div>
+              </fieldset> 
+              <div class="modal fade response-message">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      You message has been sent! We will be in touch soon.
+                    </div>      
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        <!-- Getting started end -->
+          <pre class="prettyprint linenums">
+&lt;form id="contact-form"&gt;
+  &lt;div class="contact-form-loader">&lt;/div&gt;
+  &lt;fieldset&gt;
+    &lt;label class="name"&gt;
+      &lt;input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid name.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="state"&gt;
+      &lt;input type="text" name="state" placeholder="State:" data-constraints="@JustLetters" /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid state.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="email"&gt;
+      &lt;input type="text" name="email" placeholder="Email:" value="" data-constraints="@Required @Email" /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid email.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="phone"&gt;
+      &lt;input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid phone.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="fax"&gt;
+      &lt;input type="text" name="fax" placeholder="Fax:" data-constraints="@JustNumbers" /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid fax.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="file"&gt;
+      &lt;input type="file" name="attachment" class="filestyle file-input" data-input="true" &gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid file.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="message"&gt;
+      &lt;textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'&gt;&lt;/textarea&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*The message is too short.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;div&gt;
+      &lt;a href="#" data-type="submit" &gt;submit&lt;/a&gt;
+      &lt;a href="#" data-type="reset" &gt;reset&lt;/a&gt; 
+    &lt;/div&gt;
+  &lt;/fieldset&gt; 
+  &lt;div class="modal fade response-message"&gt;
+    &lt;div class="modal-dialog"&gt;
+      &lt;div class="modal-content"&gt;
+        &lt;div class="modal-header"&gt;
+          &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
+          &lt;h4 class="modal-title"&gt;Modal title&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+          You message has been sent! We will be in touch soon.
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;   </pre>
+        <h4>Описание</h4>
+           Структура HTML в форме очень гибкая, единственное условие - все поля (элементы HTML input, textarea) должны находиться внутри тега  <strong>label</strong>, класс которого соответствует их типу.<br>
+      <p>Существуют следующие классы/типы по умолчанию:</p>
+        <ul class="square-list">
+          <li><strong>name</strong> &ndash; Имя пользователя. Проверка: цифры не допускаются, не менее 2х символов;</li>
+          <li><strong>email</strong> &ndash; Email пользователя;</li> 
+          <li><strong>state</strong> &ndash; Страна (Область). Проверка: цифры не допускаются, не менее 2х символов;</li>
+          <li><strong>phone</strong> &ndash; Телефон. Проверка: только цифры, не менее 5 символов. Дополнительные допустимые неалфавитные знаки:  "space", "+" and "-";</li>
+          <li><strong>fax</strong> &ndash; Факс. Проверка: только цифры, не менее 5 символов. Дополнительные допустимые неалфавитные знаки:  "space", "+" and "-";</li>
+          <li><strong>file</strong> &ndash; Загрузка файлов. Проверка: максимальный размер файла для загрузки 10 MB. Допускаются форматы файлов doc, docx, txt, pdf, zip, rar.</li>
+          <li><strong>message</strong> &ndash; Сообщение. Проверка: любые знаки, не менее 20 символов.</li>
+          <li><strong>@Required</strong> &ndash; Этот атрибут данных используется как указатель опциональных полей при заполнении формы.</li>
+        </ul>
+     <p>Также, вышеупомянутый тег <strong>label</strong> может включать элементы <em><strong>span</strong></em> с классами <strong>error-message</strong> и <strong>empty-message</strong>, которые содержат сообщение об ошибке, если информация введена неверно или поле пустое.</p>                 
+      
+
+    <h4>Инициализация скрипта</h4>
+      <div class="inner">
+        <p>Чтобы активировать контактную форму, необходимо добавить соответствующий скрипт в секцию  <strong>&lt;head&gt;</strong> файла HTML и скопировать папку <strong>"bat"</strong> в корневую директорию веб-сайта. В папке <strong>"bat"</strong> должно находится 2 файла: <strong>MailHandler.php</strong>, <strong>libmail.php</strong></p>
+              <pre  class="prettyprint linenums">&lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/modal.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/bootstrap-filestyle.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/TMForm.js"&gt;&lt;/script&gt;</pre>
+        
+        <p>Откройте файл <strong>MailHandler.php</strong> в папке <strong>bat</strong> и установите/измените требуемые настройки: </p>
+          <pre class="prettyprint linenums">$owner_email='#';
+
+//SMTP server settings  
+$host = 'ssl://smtp.gmail.com';
+$port = '465';//"587";
+$username = '';
+$password = '';  
+
+$subject='A message from your site visitor ';
+
+$file_types='/(doc|docx|txt|pdf|zip|rar)$/';
+
+$error_text_filesize='file size must be less than';
+$error_text_filetype='wrong file type';
+$error_text='something goes wrong';</pre>
+        <p>Используйте следующие параметры настройки:</p>
+          <ul class="square-list">
+            <li><strong>$owner_email</strong> &ndash; электронный адрес, куда будет отправляться информация;
+          </ul>
+          <p>Обратите внимание, что следующие четыре опции (<strong>$host, $port, $и $password</strong>) нужно задавать только в том случае, если вы используете SMTP-сервер для отправки писем с веб-сайта. По умолчанию, <strong>MailHandler.php</strong> использует стандартную  <strong> функцию PHP mail()</strong>, которая работает в большинстве случаев и не требует дополнительных настроек.</p>
+          <ul class="square-list">
+            <li><strong>$host</strong> &ndash; адрес SMTP сервера используемого для отправки сообщений;</li>
+            <li><strong>$port</strong> &ndash; порт SMTP сервера используемого для отправки сообщений;</li>
+            <li><strong>$username</strong> &ndash; имя пользователя для авторизации на SMTP сервере;</li>
+            <li><strong>$password</strong> &ndash; пароль для авторизации на SMTP сервере;</li>
+            <li><strong>$subject</strong> &ndash; тема писем контактной формы;</li>
+            <li><strong>$file_types</strong> &ndash; типы файлов, которые можно загружать и отправлять через форму;</li>
+            <li><strong>$error_text_filesize</strong> &ndash; текст ошибки при недопустимом размере загружаемого файла;</li>
+            <li><strong>$error_text_filetype</strong> &ndash; текст ошибки при недопустимом типе загружаемого файла;</li>
+            <li><strong>$error_text</strong> &ndash; текст ошибки в случае возникновения проблем с отправкой сообщения.</li>
+          </ul>
+      </div>
+        </article>
+        <!---->
+         <h4 id="search-engine" class="scrollTo">Руководство для поискового движка</h4>
+         <article class="search-engine"><p>Внимание! Функция поиска не работает локально. Она работает только на хостинг-сервере с включенным PHP.</p>
+         <div class="bs-docs-example">
+					
+					<span class="word">Введите слово для поиска:</span>
+					<form id="search" action="search.php" method="GET" accept-charset="utf-8">
+					   <input type="text" name="s" />
+					   <a onclick="document.getElementById('search').submit()">Search</a>
+					</form>	          		
+					<span class="example">Например: lorem, ipsum, dolor</span>
+          </div>
+          <pre class="prettyprint linenums">&lt;form id="search" action="search.php" method="GET" accept-charset="utf-8"&gt;
+   &lt;input type="text" name="s" /&gt;
+   &lt;a onclick="document.getElementById('search').submit()"&gt;Search&lt;/a&gt;
+&lt;/form&gt;</pre>
+					<h4>Описание</h4>
+					<div class="inner">
+						<p><strong>Файлы, необходимые для работы с формой:</strong></p>
+						<div class="inner">
+							<ul class="square-list">
+								<li><strong>jquery.js</strong> &ndash; библиотека jQuery (форма будет работать только с этой версией библиотеки);</li>
+								<li><strong>search.css</strong> &ndash; файл стилей, используемый для оформления страницы результатов поиска;</li>
+								<li><strong>search.php</strong> &ndash; страница, на которой отображаются результаты поиска;</li>
+								<li><strong>search.js</strong> &ndash; скрипт, отвечающий за вывод результатов поиска в iframe страницы <strong>search.php;</strong></li>
+								<li><strong>results.php</strong> &ndash; PHP скрипт, который выполняет поиск.</li>
+							</ul>
+						</div>
+						
+						<p class="pad">Для этой формы нужно задать такие параметры, как: <strong>action="search.php"</strong> и <strong>method="get"</strong>, а также следующий параметр для тега input: <strong>name="s"</strong>. Если требуется изменить название поисковой формы, по умолчанию <strong>id="search"</strong>, это нужно сделать в строке 3 файла <strong>search.js</strong> в папке <strong>search</strong>.</p>						
+					</div>
+					<h4>Настройки</h4>
+					<div class="inner">
+						<p class="attention">Внимание, по умолчанию поисковая форма активна, настроена и работает. Данные шаги необходимы, если вы пытаетесь добавить ее в другой проект/шаблон.</p>
+						<p>Чтобы форма правильно работала, выполните следующее:</p>
+						<ul class="square-list">
+							<li>скопируйте папку <strong>search</strong> в корневую директорию с файлами *.html;</li>
+							<li>переместите файл <strong>search.php</strong> из папки <strong>search</strong> в корневую директорию (с файлами *.html);</li>
+							<li>отредактируйте форму, используя вышеуказанное руководство;</li>
+							<li>скопируйте часть  хедера и футера со всеми подключенными скриптами в секцию <strong>&lt;head&gt;&lt;/head&gt;</strong> файла <strong>search.php</strong>, но обязательно добавьте подключение к файлу <strong>search.js</strong>. Например:
+							<pre  class="prettyprint linenums">&lt;link rel="stylesheet" href="css/reset.css" type="text/css" media="all"&gt;
+&lt;link rel="stylesheet" href="css/fonts.css" type="text/css" media="all"&gt;
+&lt;link rel="stylesheet" href="css/style.css" type="text/css" media="all"&gt;
+&lt;script src="js/jquery.js"&gt;&lt;/script&gt;
+&lt;script src="search/search.js"&gt;&lt;/script&gt;</pre></li>
+							<li>Для вывода результатов поиска добавьте следующий блок в контент:
+								<pre class="prettyprint linenums">&lt;h4&gt;Search result:&lt;/h4&gt;
+&lt;div id="search-results"&gt;&lt;/div&gt;</pre>								
+							</li>
+							<li>Измените стили результатов поиска, используя <strong>search.css</strong> файл.</li>
+						</ul>			
+						<p>Все остальные основные стили шаблона будут автоматически подгружены из файла <strong>style.css</strong> PHP скриптом.</p>
+					</div>
+				</article> 
+         
+         
+         <!---->
+         <h4 id="under-construction" class="scrollTo">Скрипт обратного отсчета (Страница Сайт в разработке)</h4>
+         	<article>	
+          <div class="bs-docs-example">
+						<div class="counter_pos1">
+							<div id="counter"></div>
+							<div class="counter_desc">
+								<div class="days">Дни</div>
+								<div class="hours">Часы</div>
+								<div class="minutes">Минуты</div>
+								<div class="seconds">Секунды</div>
+							</div>	
+						</div></div>  
+            <pre class="prettyprint linenums">&lt;div id="counter"&gt;&lt;/div&gt;
+&lt;div class="counter_desc"&gt;
+  &lt;div class="days"&gt;Days&lt;/div&gt;
+  &lt;div class="hours"&gt;Hours&lt;/div&gt;
+  &lt;div class="minutes"&gt;Minutes&lt;/div&gt;
+  &lt;div class="seconds"&gt;Seconds&lt;/div&gt;
+&lt;/div></pre>
+          <div class="inner">
+						<p><strong>Особенности:</strong></p>
+						<div class="inner">
+							<ul class="square-list">
+								<li>отсчет времени оставшегося до установленной даты;</li>
+								<li>скины для пользовательского дизайна.</li>
+							</ul>
+						</div>	
+					</div>
+					<h4>Описание</h4>
+					<div class="inner">
+						<p><strong>Файлы, необходимые для работы с таймером:</strong></p>
+						<div class="inner">
+							<ul class="square-list">
+								<li><strong>jquery.js</strong> &ndash;  библиотека jQuery  (таймер работает только на этой версии библиотеки);</li>
+								<li><strong>jquery.countdown.min.js</strong> &ndash; функциональность таймера;</li>
+								<li><strong>demo.css</strong> &ndash; набор CSS стилей для оформления таймера.</li>
+							</ul>
+						</div>
+						<strong class="code-pad">Чтобы начать работу с таймером, добавьте подключение следующих файлов в секцию &lt;head&gt; HTML файла:</strong>
+						<pre class="prettyprint linenums">&lt;link rel="stylesheet" href="css/demo.css" type="text/css" media="all"&gt;
+&lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/jquery.countdown.min.js"&gt;&lt;/script&gt;</pre>					
+					</div>
+					<h4>Инициализация</h4>
+					<div class="inner">
+						<p>Код для инициализации таймера находится в конце файла <strong>jquery.countdown.min.js</strong>:</p>
+							<pre class="prettyprint linenums">$(document).ready(function(){
+var _date=new Date()
+	,countdown_to={
+		year:2013
+		,month:6 
+		,date:13
+		,hours:0
+		,minutes:15
+		,seconds:00
+	}
+
+_date.setFullYear(countdown_to.year,countdown_to.month,countdown_to.date)
+_date.setHours(countdown_to.hours)
+_date.setMinutes(countdown_to.minutes)
+_date.setSeconds(countdown_to.seconds)
+
+/*code for demonstration*/
+_date=new Date()
+_date.setMonth(_date.getMonth()+8)
+/*end code for demonstration*/
+	
+$('#counter').countdown({
+	image: 'img/digits_inverted.png',
+	startTime: _date,
+	stepTime: 35
+});	
+});							</pre>
+						<p>Инициализация происходит при событии <b><i>$(document).ready()</i></b>.</p> Параметры:
+						<ul class="square-list">
+							<li><strong>image</strong> &ndash; указывает путь к изображению, используемого в качестве оформления (директория <strong>images</strong> содержит файлы, которые можно использовать в качестве скинов таймера);</li>
+							<li><strong>startTime</strong> &ndash; окончательная дата отсчета. Отсчет времени задается через переменную <strong>_date</strong>;</li>
+							<li><strong>stepTime</strong> &ndash; цикл анимации цифр.</li>							
+						</ul>
+						<p>На данной демо-версии показано время, которое остается от текущей даты + 8 месяцев. Поэтому таймер начинает новый отсчет после каждой перезагрузки страницы. Эти параметры можно задавать в следующем коде:</p>
+							<pre class="prettyprint linenums">
+/*code for demonstration*/
+_date=new Date()
+_date.setMonth(_date.getMonth()+8)
+/*end code for demonstration*/
+					</pre>
+						<p class="pad">Если вы хотите задать точную дату, нужно изменить переменную <strong>_date</strong>. Для этого необходимо  отредактировать значения для <strong>year, month</strong> (обратите внимание, что нумерация месяцев начинается с нуля)<strong>, date, hours, minutes, seconds</strong>. Данные параметры следует указать в следующем коде:</p>
+						<div class="pad">
+							<pre class="prettyprint linenums">$(document).ready(function(){
+var _date=new Date()
+	,countdown_to={
+		year:2013
+		,month:6 
+		,date:13
+		,hours:0
+		,minutes:15
+		,seconds:00
+	}
+});							</pre>
+						</div>
+						<p>Также нужно удалить следующий код:</p>
+							<pre class="prettyprint linenums">
+/*code for demonstration*/
+_date=new Date()
+_date.setMonth(_date.getMonth()+8)
+/*end code for demonstration*/
+						</pre>
+						<h4>Цветовые темы</h4>
+						<p class="pad">Ниже приведены примеры оформления таймера. Все эти скины находятся в папке <strong>images</strong>.</p>						
+						<div class="counter_pos">
+							<div id="counter1"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'img/digits.png',
+});						</code></pre>
+						</div>	
+						</div>						
+						<div class="counter_pos">
+							<div id="counter2"></div>
+							<div class="counter_desc">
+								<div class="days">Days</div>
+								<div class="hours">Hours</div>
+								<div class="minutes">Minutes</div>
+								<div class="seconds">Seconds</div>
+							</div>	
+							<div class="code pad">
+							<pre><code>$('#counter').countdown({
+	image: 'img/digits2.png',
+});						</code></pre>
+						</div>	
+						</div>						
+					</div>
+				</article> 
+         <!---->
+         <h4 id="subscription-form" class="scrollTo">Руководство по форме подписки</h4>
+          <article>
+    <h4>Пример формы подписки</h4>
+    <div class="inner">
+        <div class="bs-docs-example">
+        <form id="subscribe-form">
+          <div class="success">Your subscription request has been sent!</div>
+            <fieldset>
+            <label class="name">
+                <input type="text" value="Enter Name:">
+                <span class="error">*This is not a valid name.</span></label>
+            <label class="email">
+                <input type="email" value="Enter Email:">
+                <span class="error">*This is not a valid email address.</span></label>
+            <div class="btns"><a href="#" class="button" data-type="submit">Submit</a></div>
+          </fieldset>
+        </form>
+      </div>
+            <pre class="prettyprint linenums">
+&lt;form id="subscribe-form"&gt;
+  &lt;div class="success"&gt;Your subscription request&lt;br&gt; has been sent!&lt;/div&gt;
+    &lt;fieldset&gt;
+    &lt;label class="name"&gt;
+        &lt;input type="text" value="Enter Name:"&gt;
+        &lt;span class="error"&gt;*This is not a valid name.&lt;/span&gt;&lt;/label&gt;
+    &lt;label class="email"&gt;
+        &lt;input type="email" value="Enter Email:"&gt;
+        &lt;span class="error"&gt;*This is not a valid email address.&lt;/span&gt;&lt;/label&gt;
+    &lt;div class="btns"&gt;&lt;a href="#" class="button" data-type="submit"&gt;Submit&lt;/a&gt;&lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;                       </pre>
+    </div>
+
+    <!-- Getting started end -->
+    <h4>Описание</h4>
+    <div class="inner"> Структура HTML внутри формы гибкая, единственное условие - поля ввода должны быть расположены внутри тега <strong>label</strong> с   классом, который соответствует их типу.<br>
+        <p>По умолчанию, в ней доступны следующие классы/типы:</p>
+        <div>
+            <ul class="square-list">
+            <li><strong>name</strong> &ndash; Имя пользователя. Проверка: цифры не допускаются, не менее 2 символов;</li>
+            <li><strong>email</strong> &ndash; Email пользователя;</li>
+          </ul>
+            
+          </div>
+      </div>
+    <p>Также, вышеупомянутый тег <strong>label</strong> может включать элементы <em><strong>span</strong></em> с классом <strong>error</strong>, 
+        которые представляют собой сообщение об ошибке, если данные были введены неверно.</p>
+    
+    <h4>Инициализация скрипта</h4>
+    <div class="inner">
+        <p>Для активации формы подписки, необходимо подключить скрипт формы подписки в секции <strong>&lt;head&gt;</strong> HTML файла и скопировать  папку  <strong>"bat"</strong> в корневую папку сайта. В папке <strong>"bat"</strong> должен находиться 1 файл: <strong>MailHandler-sub.php</strong></p>
+        
+        <pre class="prettyprint linenums">&lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/sForm.js"&gt;&lt;/script&gt;</pre>
+      
+        <p>После этого нужно инициализировать скрипт формы подписки при событии $(window).load(): в конце файла sForm.js</p>
+        <pre class="prettyprint linenums">
+$(window).load(function(){
+  $('#subscribe-form').sForm({
+    ownerEmail:'#',
+    sitename:'sitename.link'
+  })
+})					</pre>
+        <p>Для инициализации используйте следующие параметры:</p>
+        <ul class="square-list">
+            <li><strong>ownerEmail</strong> &ndash;  Email-адрес, на который будут отправляться данные;</li>
+            <li><strong>sitename</strong> &ndash; адрес веб-сайта, на котором размещена форма подписки.</li>
+          </ul>
+        <p>В случае успешной подписки, владелец сайта и посетитель получат два разных письма, подтверждающих успешную подписку. Электронный адрес владельца сайта подгружается из файла sForm.js, а email посетителя указывается во время подписки.</p>
+      </div>
+    </article>
+    <h4 id="multimedia-gallery" class="scrollTo" style="padding: 50px 0 0px 0;">TM Галерея</h4>
+    <article>  
+
+    <!-- Getting started end -->
+    <h4>Описание</h4>
+    <div class="inner"> 
+     <strong>tmMultimediaGallery</strong> - это адаптивная галерея, в которой используются методы 3D и CSS3 анимации. Эффекты смены картинок меняются с помощью CSS свойств.<br>
+       Нужно отметить, что в браузерах, которые не поддерживают CSS3 анимацию, эффектом смены картинок будет обычный эффект затухания.<br>
+      <p class="top-indent">Реализация галереи может быть в двух вариантах:</p>
+        <div>
+            <ol class="square-list">
+            <li>Автоматическое построение списка картинок с указанием пути к папке с картинками.</li>
+            <li>Ручная вставка списка в HTML код с прописыванием соответствующих путей к картинкам.</li>
+          </ol>
+            
+          </div>
+      </div>
+    <p  class="top-indent">Рассмотрим оба варианта и выясним их отличия.</p>
+    
+    <h4>Вариант 1.</h4>
+    <div class="inner">
+        <p>Подключение и настройка галереи состоит из нескольких шагов:</p>
+        <ol>
+          <li>Создайте копию одной из страниц сайта и переименуйте ее используя любое название.</li>
+          <li>В новой странице оставьте хедер и футер, а все, что находиться внутри контента, удалите.</li>
+          <li>Скопируйте в корень вашего сайта папку <a href="/help/quick-start-guide/website-templates/responsive-website-templates-v1-1/gallery.rar">gallery</a>, которая содержит файлы галереи.</li>
+          <li>Подключите следующие скрипты и стили в секции head:
+              <pre class="prettyprint linenums">
+&lt;!-- start gallery scripts --&gt;
+&lt;link rel="stylesheet" href="gallery/css/tmMultimediaGallery.css"&gt;
+&lt;script src="gallery/js/isotope.pkgd.min.js"&gt;&lt;/script&gt;
+&lt;script src="gallery/js/tmFileList.js"&gt;&lt;/script&gt;
+&lt;script src="gallery/js/tmPaginationGenerator.js"&gt;&lt;/script&gt;
+&lt;script src="gallery/js/tmMultimediaGallery.js"&gt;&lt;/script&gt;
+&lt;script src="gallery/js/tmMultimediaGallery_init.js"&gt;&lt;/script&gt;
+&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;     
+&lt;script src="gallery/js/jquery.touchSwipe.min.js"&gt;&lt;/script&gt;
+&lt;!--&lt;![endif]--&gt;
+
+&lt;!-- end gallery scripts --&gt;         </pre>
+          </li>
+          <li>Перед закрывающим тегом <strong>&lt;/body&gt;</strong> нужно вставить следующий код, и указать верные пути к папкам с картинками. <strong>pathThumb</strong> - путь к миниатюрам, <strong>pathFull</strong> - путь к большим картинкам галереи, которые соответствуют миниатюрам:
+            <pre class="prettyprint linenums">
+&lt;script&gt;
+    $(function(){
+        pathThumb = 'img/gallery/category1/';
+        pathFull = 'img/gallery/category1/full/';
+    })
+&lt;/script&gt;         </pre>
+          </li>
+          <li>Перед контентом вставьте следующий код:
+            <pre class="prettyprint linenums">
+&lt;div class="galleryContainer"&gt;
+    &lt;!-- spinner --&gt;
+    &lt;div class="imgSpinner"&gt;&lt;/div&gt;
+    &lt;!-- close button --&gt;
+    &lt;a href="" class="close-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+
+    &lt;!-- Navigation --&gt;
+    &lt;div class="gallery_nav"&gt;
+        &lt;!-- previous button --&gt;
+        &lt;a href="#" class="prevButton"&gt;
+            &lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;
+       &lt;/a&gt;
+        &lt;!-- next button --&gt;
+        &lt;a href="#" class="nextButton"&gt;
+            &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;!-- main gallery and image holder --&gt;
+    &lt;div class="galleryHolder"&gt;
+        &lt;div class="imageHolder"&gt;
+            &lt;img src="images/gallery/category1/full/img-1.jpg" alt=""&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;           </pre>
+
+          </li>
+          <li>Обязательно пропишите правильный путь к любой большой картинке во вставленном коде.</li>
+          <li> Внутри контента HTML страницы нужно создать элемент &lt;div&gt;   с классом CSS <strong>"inner"</strong>:
+  <pre class="prettyprint linenums">
+&lt;div class="inner"&gt;&lt;/div&gt;         </pre>
+          </li>
+          <li>Добавьте ссылку в необходимом месте сайта на созданную новую страницу и проверьте свою галерею в браузере.</li>
+
+        </ol>
+
+        <p class="error-box">Важно! Созданные HTML файлы должны находиться в корневой директории сайта на одном уровне с папкой "gallery". </p>
+
+        <p class="notification-box"> Внимание! Если названия и количество миниатюр не будет совпадать с названиями и количеством больших картинок, галерея будет работать некорректно.</p>
+        
+        
+        <p> Суть данного варианта заключается в том, что не нужно вручную прописывать пути к каждой картинке. Вам стоит лишь указать путь к папкам с миниатюрами и большими картинками. Скрипт сам найдет картинки в указанных папках и сгенерирует список. Поэтому очень важно сохранить соответствие названий и количества картинок в обеих папках. </p>
+
+        <p>Просмотреть  <a href="http://www.templatemonster.com/help/files/demos/gallery-demo/gallery-without-description.html" target="blank_">демо</a></p>       
+      </div>
+
+      <h4>Вариант 2.</h4>
+      <div class="inner">
+        <p>Второй вариант отличается от первого возможностью прикрепить к каждой фотографии описание, если оно необходимо. Для этого нужно выполнить с 1 по 5 шаги включительно с первого варианта реализации галереи.</p>
+       Необходимо:
+         <ol class="top-indent">
+           <li>Перед контентом вставьте следующий код:
+            <pre class="prettyprint linenums">
+&lt;div class="galleryContainer"&gt;
+    &lt;!-- spinner --&gt;
+    &lt;div class="imgSpinner"&gt;&lt;/div&gt;
+    &lt;!-- close button --&gt;
+    &lt;a href="" class="close-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;!-- Navigation --&gt;
+    &lt;div class="gallery_nav"&gt;
+        &lt;!-- previous button --&gt;
+        &lt;a href="#" class="prevButton"&gt;
+            &lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;
+       &lt;/a&gt;
+        &lt;!-- next button --&gt;
+        &lt;a href="#" class="nextButton"&gt;
+            &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- main gallery and image holder --&gt;
+    &lt;div class="galleryHolder"&gt;
+        &lt;div class="imageHolder"&gt;
+            &lt;img src="images/gallery/category1/full/img-1.jpg" alt=""&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- description --&gt;
+    &lt;a href="#" class="info-icon"&gt;&lt;i class="fa fa-info"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class="galleryDescription"&gt;
+        &lt;ul class="description_list"&gt;
+            &lt;li&gt;
+                .......your decription.......
+                &lt;a href="#" class="close-info-icon"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;!-- end description --&gt;
+&lt;/div&gt;  
+            </pre>
+
+           </li>
+           <li>Внутри контента  нужно создать елемент &lt;div&gt; с CSS классом <strong>"inner"</strong> и со списком картинок:
+            <pre class="prettyprint linenums">
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="images/gallery/category1/full/img-1.jpg" &gt;&lt;img src="images/gallery/category1/img-1.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="images/gallery/category1/full/img-2.jpg" &gt;&lt;img src="images/gallery/category1/img-2.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;
+  ..............
+&lt;/ul&gt;
+            </pre>
+           </li>
+           <li>Пропишите в списке <strong>&lt;ul class="description_list"&gt;</strong> описание к картинкам. Первый элемент <strong>li</strong> данного списка будет соответствовать первому элементу с тегом <strong>li</strong> (картинке) со списка внутри <strong>&lt;div class="inner"&gt;</strong>.</li>
+         </ol>
+         <p class="top-indent">Просмотреть <a href="http://www.templatemonster.com/help/files/demos/gallery-demo/gallery-with-description.html" target="blank_">демо</a></p>
+        Стилизацию внешнего вида галереи можно осуществить, используя файлы <strong>\gallery\less\tmMultimediaGallery.less</strong> (только для экспертов) или <strong>\gallery\css\tmMultimediaGallery.css</strong>.
+      </div>
+    </article>
+</section>
+<section class="block-templates" id="cookie-policy">
+  <h2><i class="icon-copy"></i> Политика использования фалов Cookie </h2>
+
+  <p>Cookies  - это небольшие текстовые файлы, которые веб-сайты создают на компьютерах пользователей. Они используются для идентификации пользователей и улучшения качества использования веб-сайта. Cookies являются важной частью многих функций  веб-сайтов.</p>
+  <p>Например, cookies позволяют онлайн магазинам запоминать, какие товары вы добавили в корзину. Также они сохраняют данные входа на сайт или предоставляют ценную статистику использования и информацию владельцам сайтов.</p>
+  <p>Если у вас есть веб-сайт, он почти наверняка использует cookies.  Их главная функция - изучать количество и интересы пользователей через специальные инструменты, например Google Analytics. Также они могут использоваться для отображения объявлений, или – если у вас есть онлайн-магазин – быть ключевой частью системы электронной коммерции.</p>
+   <p>26 мая 2012 г. -  ICO опубликовал акт о том, что "подразумеваемое согласие" не допускается и необходимо сообщать о политике приватности/cookie.</p>
+   <h4>Информация:</h4>
+
+   <p>Согласно Закону об использовании файлов Cookie, мы предлагаем добавить плагин <a href="http://cookiecuttr.com/">cookiecuttr</a>, созданный <a href="https://twitter.com/cdwharton">Крисом Уортоном</a> и распространяемый по лицензии GNU General Public License.</p>
+
+<h4>Он выглядит следующим образом:</h4>
+
+<p>Данный плагин используется для предупреждения посетителей веб-сайта об использовании файлов cookies. Он добавляет блок с информацией, который можно полностью модифицировать в файлах <strong>css</strong> и <strong>js</strong> :</p> <p>  <img src="img/cookiecuttr.png" alt="">  </p> 
+
+   <h4>Как установить плагин</h4>
+   <p>Необходимо скачать файлы <a href="js/jquery.cookie.js" download>jquery.cookie.js</a>, <a href="js/jquery.cookiecuttr.js" download>jquery.cookiecuttr.js</a> и <a href="css/cookiecuttr.css" download>cookiecuttr.css</a>.  Скопируйте их в папки <strong>js</strong> и <strong>css</strong> соответственно, добавьте скрипты плагина и ссылку на файл css в секции <strong>&lt;head&gt;</strong> каждого <strong>html</strong> файла:</p>
+   <pre class="prettyprint linenums">
+&lt;!-- cookiecuttr plugin --&gt;
+ &lt;link rel="stylesheet" href="css/cookiecuttr.css"&gt;
+ &lt;script src="js/jquery.cookie.js"&gt;&lt;/script&gt;
+ &lt;script src="js/jquery.cookiecuttr.js"&gt;&lt;/script&gt;
+&lt;!-- end cookiecuttr plugin --&gt;                 </pre>
+
+
+<h4>Кастомизация плагина</h4>
+
+<p>В данном плагине есть множество параметров и настроек, что позволяет модифицировать его как угодно.</p> <p>Вот примеры некоторых из них:</p>
+ <pre class="prettyprint linenums">
+cookieCutter // измените данную опцию на true, если не хотите, чтобы часть сайта была скрытой, например, вы используете систему комментариев, что вставляет cookies, тогда можно добавить название div снизу для замены на предупреждение о  файлах cookie.
+cookieAnalytics //если вы просто используете простой сайт, можно задать эту опцию как true, чтобы показывать простое стандартное сообщение без ссылки на страницу с изложенной политикой - true уже задано по умолчанию.
+cookieDeclineButton // если нужно добавить кнопку отказа от использования файлов cookie в браузере, выставите опцию в true;
+cookieAcceptButton // задайте true, чтобы убрать кнопку согласия с использованием  файлов cookie, по умолчанию false;
+cookieResetButton // если нужна кнопка сброса, чтобы убрать согласие/отказ использования  cookies, измените на true;
+cookieOverlayEnabled // не хотите, чтобы панель отображалась упрощенно? при данной опций все сообщения будет показываться на 100% в высоту; 
+cookiePolicyLink // если нужно, введите ссылку на политику конфиденциальности - в том случае, когда cookieAnalytics стоит на  false;
+cookieMessage // отредактируйте текст, отображаемый в панели cookie, используйте переменную {{cookiePolicyLink}}, чтобы вставить ссылку на страницу с изложенной политикой конфиденциальности;
+cookieAnalyticsMessage // отредактируйте текст стандартного сообщения;
+cookieWhatAreTheyLink // задайте ссылку на страницу 'Что такое Cookies';
+cookieErrorMessage // напишите сообщение, которое будет отображаться вместо функционала;
+cookieNotificationLocationBottom // по умолчанию выставлено в false, измените это на true и панель уведомления об использовании cookie будет отображаться внизу страницы; для мобильных и iOS устройств, а также в Internet Explorer 6 панель останется сверху;
+cookieDisable // перечислите элементы, которые хотите убрать (через запятую). Опция сработает, только если cookieCutter выставлен в true;
+cookieAcceptButtonText // можно изменить текст зеленной кнопки принятия;
+cookieDeclineButtonText // можно изменить текст красной кнопки отказа;
+cookieResetButtonText // можно изменить текст оранжевой кнопки сброса;
+cookieWhatAreLinkText // можно отредактировать текст ссылки "Что такое Cookies" в сообщении Google Analytics;
+cookiePolicyPage // измените на true, чтобы отображать необходимое сообщение на странице политики конфиденциальности или cookie;
+cookiePolicyPageMessage // напишите сообщение, которое будет показано на странице политики конфиденциальности;
+cookieDiscreetLink // по умолчанию false, измените на true, чтобы включить данную опцию;
+cookieDiscreetLinkText // задайте текст для упрощенной панели;
+cookieDiscreetPosition // по умолчанию имеет значение topleft, можно поставить topright, bottomleft, bottomright;
+cookieDomain // по умолчанию не задана, добавьте доменное имя без www. или https:// или http://, чтобы избавиться от Google Analytics cookies;                 </pre>
+<p>Более детальную информацию и инструкции по кастомизации и использованию плагина можно найти на официальном сайте <a href="http://cookiecuttr.com/">cookiecuttr</a>.</p>
+</section>
+
+<section class="block-templates" id="uploading-template">
+  <h2 class="item7"><i class="icon-cogs"></i> Загрузка шаблона </h2>
+
+  <p>Чтобы сделать сайт "живым", загрузите весь контент папки "<strong>site</strong>" с компьютера на хостинг-сервер.</p>
+            <p>Внимание: корневая папка веб-сайта зависит от структуры директорий на  хостинг-сервере. Если вы просто загрузите папку  &quot;<strong>site</strong>&quot;, адрес вашего веб-сайта будет выглядеть как <strong>http://your_domain_name/site</strong>. Чтобы сайт выглядел как <strong>http://your_domain_name/</strong>, просто откройте папку &quot;<strong>site</strong>&quot; и загрузите ее контент. </p>
+            <p>Данный <a href="/help/how-upload-files-server-2.html" target="_blank">видео туториал покажет, как загружать файлы</a> на сервер при помощи FTP-клиента FileZilla.</p>
+            <p>Данный <a href="/help/how-to-upload-files-to-a-server-using-cpanel-webhost-manager-whm.html" target="_blank">видео туториал покажет, как загружать файлы</a> на сервер при помощи панели управления хостингом (WebHost Manager, WHM).</p>
+            <p class="error-box">Ни в коем случае не загружайте папку sources или другие исходные файлы шаблона на хостинг-сервер. </p>
+
+</section>
+
+
+<section class="block-templates" id="conclusion">
+  <h2 class="item8"><i class="icon-question-sign"></i> Дополнение <small>куда обратиться за помощью, поддержкой и дополнительной информацией</small> </h2>
+
+  <p>Мы надеемся, данное руководство было полезным для вас и помогло вам отредактировать, установить шаблон, а так же решить возникшие трудности.</p>
+            <div>
+    <h4>Помощь и Поддержка</h4>
+    <ul class="list">
+      <li><a href="http://chat.template-help.com/" target="_blank">Чат</a></li>
+      <li><a href="http://esupport.template-help.com/index.php?/Tickets/Submit"  target="_blank">Тикет-система</a></li>
+    </ul>
+  </div>
+
+  <div id="help_support">
+    <h4>Инструкции</h4>
+    <ul class="list">
+      <li><a target="_blank" href="/help/developer-tools.html">Инструменты разработчика</a></li>
+            <li><a target="_blank" href="/help/general-tutorials/hosting-faq/">FAQ по хостингу</a></li>
+            <li><a target="_blank" href="/help/general-tutorials/work-with-css/">Работа с CSS</a></li>
+            <li><a target="_blank" href="/help/general-tutorials/work-with-photoshop/">Работа с Photoshop</a></li>
+            <li><a target="_blank" href="/help/general-tutorials/work-with-html/">Работа с HTML</a></li>
+            <li><a target="_blank" href="/help/general-tutorials/work-with-files/">Работа с файлами</a></li>
+            <li><a target="_blank" href="/help/website-templates/js-animated/js-animated-tutorials/">Туториалы для JS-анимированных шаблонов</a></li>
+            <li><a target="_blank" href="/help/general-tutorials/work-with-fonts/">Работа со шрифтами</a></li>
+    </ul>
+  </div>
+            
+
+</section>
+
+</div>
+</div>
+</div>
+
+  </div>
+  </div>
+  </div>
+   <!-- Footer
+    ================================================== -->
+    <footer>
+      <div class="container">        
+       Документация шаблона<br>
+      &copy; <span id="copyright-year"></span> <span id="copyright">Template Monster</span>
+      </div>
+    </footer>
+
+  <div id="back-top">
+    <a href="#"><i class="icon-double-angle-up"></i></a>
+  </div>
+    
+<!-- <script src="js/bootstrap-scrollspy.js"></script>  -->
+
+<script type="text/javascript"> 
+  var _gaq = _gaq || []; 
+  _gaq.push(['_setAccount', 'UA-2787305-5']); 
+  _gaq.push(['_trackPageview']); 
+
+  (function() { 
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+  })(); 
+</script>
+    
+
+    <div class="language-modal">
+  <div class="modal_bg"></div>
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal_remove pull-right"><i class="icon-remove"></i></span>
+      <h3>Выберите язык</h3>
+    </div>
+    <div class="modal-body">
+      <ul id="modal_languages" class="nav nav-list bs-docs-sidenav"></ul>
+    </div>
+  </div>
+</div>
+</body> 
+
+</html>
