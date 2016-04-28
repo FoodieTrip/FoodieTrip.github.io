@@ -22,7 +22,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/first.jpg) no-repeat center center;
+    background: url(../img/first.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -150,7 +150,7 @@ h6 {
 
 .banner-social-buttons {
     float: right;
-    
+
     margin-top: -35px;
 }
 
@@ -173,7 +173,7 @@ h6 {
         display: block;
         margin-bottom: 20px;
         padding: 10px;
-        
+
     }
 
     ul.banner-social-buttons > li:last-child {
