@@ -72,7 +72,10 @@ h6 {
   background: #d44934;
   border-radius: 50%;
 }
-.icon__bg-2 {
+.icon__bg-1 {
+  background: #FFCC33;
+}
+.icon__bg-2{
   background: #fbb953;
 }
 .icon__bg-3 {
