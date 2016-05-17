@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<head>
+<meta charset="UTF-8"> 
+<title>加入團預覽</title> 
+</head>
+<body>
+<div >
+<h1>預覽</h1>
+<p>團名:哈哈拉麵團</p>
+<p>我的名字:ABC</p>
+<p>我點了:</p>
+<p> &nbsp 餐點  &nbsp 單價  &nbsp 數量  &nbsp </p>
+<p> &nbsp 咖哩  &nbsp 180  &nbsp 1  &nbsp </p>
+<p> &nbsp 味噌湯  &nbsp 50  &nbsp 3  &nbsp </p>
+<p>總價:$330</p>
+<p>取餐地點:管院237</p>
+<p>取餐時間:13:00</p>
+<!-- Standard button -->
+<button type="button" class="btn btn-default">返回修改</button> <button type="button" class="btn btn-default">確認加團點餐</button>
+</br>
+</br>
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+</button>
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+</button>
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+</button>
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+</button>
+
+</body> 
+
+</html>
+
