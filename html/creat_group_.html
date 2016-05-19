@@ -8,35 +8,55 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <head>
 <meta charset="UTF-8"> 
-<title>創團預覽</title> 
+<title>create_group</title>
 <style type="text/css">
 #down{
   position: absolute;
   height:800px;
 }
-</style>
+</style> 
 </head>
 <body>
+<div class="btn-group btn-group-justified" role="group" aria-label="Next">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">我的團</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">創團</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">加入團</button>
+  </div>
+</div>
+<label for="inputname">團名</label>
+<input type="groupname" class="form-control" id="inputname">
 
-<h1>預覽</h1>
-<p>團名:超棒棒的食物</p>
-<p>店名:雄太拉麵</p>
-<p>開始時間:12:00</p>
-<p>收單時間:13:30</p>
-<p>人數:4</p>
-<p>領餐地點:小七</p>
-<p>到達時間::14:00</p>
-<p>取餐地點:管院237</p>
-<p>取餐時間:13:00</p>
+<label for="inputstore">店名</label>
+<input type="storename" class="form-control" id="inputstore">
+
+<label for="inputstart">開始時間:</label>
+<input type="starttime" class="form-control" id="inputstart">
+
+<label for="inputend">收單時間:</label>
+<input type="endtime" class="form-control" id="inputend">
+
+<label for="inputnum">人數:</label>
+<input type="number" class="form-control" id="inputnum">
+
+<label for="inputtaketime">取餐時間:</label>
+<input type="taketime" class="form-control" id="inputstaketime">
+
+<label for="inputplace">取餐地點</label>
+<input type="place" class="form-control" id="place">
 </br>
-<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-picture" aria-hidden="true"></span> &nbsp &nbsp
+<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
 </br>
 </br>
-<label for="inputnum">識別碼</label>
-<input type="識別碼" class="form-control" id="inputnum">
+<p>識別碼:1234</p>
 </br>
 </br>
-<button type="button" class="btn btn-default">返回修改</button> <button type="button" class="btn btn-default">確認創團</button>
+<button type="button" class="btn btn-default">確認</button>
 <div id ="down" class="btn-group btn-group-justified" role="group" aria-label="Next">
   <div class="btn-group" role="group">
     <button type="button" class="btn btn-default buttom">
@@ -61,7 +81,6 @@
     </button>
   </div>
 </div>
-
 </body> 
 
 </html>
